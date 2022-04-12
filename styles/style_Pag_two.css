@@ -1,0 +1,39 @@
+.align { 
+    display: flex;
+   }
+.box_order{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button_plus{
+    width: 25px;
+    height: 25px;
+    
+}
+.words_order{
+    font-size: 25px;
+    font-family:'Centuri Ghotic', sans-serif;
+    color: #2DB5FF;
+    margin: auto;
+    margin-left:0;
+}
+.words_gramos{
+    padding: 5px;
+    color: #2DB5FF;
+    font-weight: 600;
+    font-family:'Centuri Ghotic', sans-serif;
+}
+table,td,th{
+    font-size: 15px;
+    color: #2DB5FF;
+    font-family:'Centuri Ghotic', sans-serif;
+    padding: 0;
+    text-align: left;
+}
+.box_table{
+    margin-left: 10px;
+    text-align: center;
+    color: #2DB5FF;
+    font-family:'Centuri Ghotic', sans-serif;
+}
