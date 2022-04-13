@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles/style_Pag_two.css">
     <link rel="stylesheet" href="styles/responsiv.css">
 </head>
-<body> 
+<body  > 
     <!-- primera pagina -->
-    <div class="box_one">
+    <div class="box_one" id="link_button" >
         <div class="box_title">
                 <h1 class="burguershop"> Burger <span class="shop">Shop</span> </h1>
         </div>
@@ -19,10 +19,10 @@
                 <input type="image" id="burguer_img" src="styles/image/burguer.png" alt="Hamburgesa">
             </div>
                 <div class="box_total">
-                    <h1 id="total"> 2$</h1>
+                    <h1 id="total"> 0$</h1>
                 </div>
         <div class="box_button">
-            <input type="button" value="Enviar" id="buy_button">
+            <input type="button" value="Enviar" id="buy_button_one">
         </div>
     </div>
 
@@ -34,26 +34,32 @@
 
                 <div class="align">
                     <p class="words_order">Carne</p>
-                        <input type="image"  
+                        <input type="image"
+                            id="button_meat"  
                             class="button_plus" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p  class="words_gramos">100g</p>
-                        <input  type="image" 
-                                class="button_plus" 
+                    <p  class="words_gramos" style="visibility:hidden;"  id="box_meat_gramos">100g</p>
+                        <input  type="image"
+                                id="negative_button_meat" 
+                                class="button_plus"
+                                style="visibility:hidden;"  
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
 
                 <div class="align">
                     <p class="words_order">Queso</p>
-                        <input type="image"  
+                        <input type="image"
+                            id="button_cheese"  
                             class="button_plus" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p  class="words_gramos">100g</p>
-                        <input  type="image"  
-                                class="button_plus" 
+                    <p  class="words_gramos" style="visibility:hidden;"  id="box_cheese_gramos">100g</p>
+                        <input  type="image"
+                                id="negative_button_cheese"  
+                                class="button_plus"
+                                style="visibility:hidden;" 
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
@@ -61,12 +67,15 @@
                 <div class="align">
                     <p class="words_order">Lechuga</p>
                         <input type="image"  
-                            class="button_plus" 
+                            class="button_plus"
+                            id="button_lettuce" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p  class="words_gramos">100g</p>
+                    <p  class="words_gramos" id="box_lettuce_gramos" style="visibility:hidden;" >100g</p>
                         <input  type="image" 
-                                class="button_plus" 
+                                class="button_plus"
+                                id="negative_button_lettuce"
+                                style="visibility:hidden;"  
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
@@ -74,12 +83,15 @@
                 <div class="align">
                     <p class="words_order">Tomate</p>
                         <input type="image"  
-                            class="button_plus" 
+                            class="button_plus"
+                            id="button_tomatoe" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p  class="words_gramos">100g</p>
+                    <p  class="words_gramos" id="box_tomatoe_gramos" style="visibility:hidden;" >100g</p>
                         <input  type="image" 
-                                class="button_plus" 
+                                class="button_plus"
+                                id="negative_button_tomatoe"
+                                style="visibility:hidden;"  
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
@@ -91,7 +103,7 @@
                             class="button_plus" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p style="visibility:hidden;" id="cebolla_gramos" class="words_gramos">100g</p>
+                    <p style="visibility:hidden;" id="box_cebolla_gramos" class="words_gramos">100g</p>
                         <input  type="image"
                                 style="visibility:hidden;"
                                 id="negative_button_cebolla"
@@ -103,13 +115,15 @@
                 <div class="align">
                     <p class="words_order">Pepinillos</p>
                         <input type="image"  
-                            class="button_plus" 
+                            class="button_plus"
+                            id="button_pickles" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p style="visibility:hidden;"  class="words_gramos">100g</p>
+                    <p style="visibility:hidden;" id="box_pickles_gramos" class="words_gramos">100g</p>
                         <input  type="image"
                             style="visibility:hidden;"
-                                class="button_plus" 
+                                class="button_plus"
+                                id="negative_button_pickles" 
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
@@ -117,12 +131,14 @@
                 <div class="align">
                     <p class="words_order">Huevo</p>
                         <input  type="image"  
-                            class="button_plus" 
+                            class="button_plus"
+                            id="button_egg" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p style="visibility:hidden;" class="words_gramos">100g</p>
+                    <p style="visibility:hidden;" id="box_egg_gramos" class="words_gramos">100g</p>
                         <input  type="image"
-                                style="visibility:hidden;"  
+                                style="visibility:hidden;"
+                                id="negative_button_egg"  
                                 class="button_plus" 
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
@@ -131,19 +147,23 @@
                 <div class="align">
                     <p class="words_order">Pollo</p>
                         <input type="image"  
-                            class="button_plus" 
+                            class="button_plus"
+                            id="button_chicken" 
                             src="styles/image/plusButton.png" 
                             alt="foto">
-                    <p style="visibility:hidden;" class="words_gramos">100g</p>
+                    <p style="visibility:hidden;" id="box_chicken_gramos" class="words_gramos">100g</p>
                         <input  type="image"
                                 style="visibility:hidden;"  
-                                class="button_plus" 
+                                class="button_plus"
+                                id="negative_button_chicken" 
                                 src="styles/image/negativeButton.png  " 
                                 alt="foto">
                 </div>
             </div>
         <div class="box_button">
-            <input type="button" value="Enviar" id="buy_button">
+            <a href="#link_button">
+            <input type="button"  id="buy_button" value="Enviar"  >
+            </a>
         </div>
     </div>
 
@@ -186,25 +206,25 @@
                         <td>0,50$</td>
                         <td>0,50$</td>
                     </tr>
-                    <tr style="visibility:hidden;">
+                    <tr >
                         <td>100g</td>
                         <td>Cebolla</td>
                         <td>0.30$</td>
                         <td>0.30$</td>
                     </tr>
-                    <tr style="visibility:hidden;">
+                    <tr >
                         <td>100g</td>
                         <td>Pepinillos</td>
                         <td>0.50$</td>
                         <td>0.50$</td>
                     </tr>
-                    <tr style="visibility:hidden;">
+                    <tr>
                         <td>150g</td>
                         <td>Huevo</td>
                         <td>1.50$</td>
                         <td>1.50$</td>
                     </tr>
-                    <tr style="visibility:hidden;">
+                    <tr >
                         <td>150g</td>
                         <td>pollo</td>
                         <td>1.50$</td>
